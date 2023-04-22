@@ -1,9 +1,14 @@
+const { getConnection } = require("../connection/connection")
+
+
+
 function save(data) {
 
 }
 
-function get() {
-
+ function get() {
+    let knex = getConnection()
+    return knex.select("*").from('user')
 }
 
 function getbyUuid(uuid) {

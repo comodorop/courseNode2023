@@ -1,11 +1,17 @@
-const repositoryCourses = require("../repository/courses.repository")
+const {get} = require("../repository/courses.repository")
 
 function saveCourses(data){
     console.log("Logica de negocios")
-    repositoryCourses(data)
+    
+}
+
+async function getCourses(){
+    let lstCourses = await get()
+    return  lstCourses
 }
 
 
 module.exports= {
-    saveCourses
+    saveCourses,
+    getCourses
 }
