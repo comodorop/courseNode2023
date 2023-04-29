@@ -1,6 +1,6 @@
-const { configDb } = require("../knexfile")
+const { development } = require("../knexfile")
 
-const cn = require('knex')(configDb);
+const cn = require('knex')(development);
 
 function getConnection() {
     return cn
