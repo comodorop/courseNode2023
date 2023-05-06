@@ -1,5 +1,5 @@
 require('dotenv').config()
-const express = require("express")
+const express = require("express") 
 const bodyParser = require('body-parser')
 const courses = require("./controller/courses.controller")
 const users = require("./controller/users.controller")
