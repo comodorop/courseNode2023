@@ -1,7 +1,3 @@
-
-
-
-
 (async () => {
     async function validateAge(age) {
         if (age > 18) {
@@ -42,15 +38,11 @@
     let [saveProductPromise, saveLogPromise] = await Promise.all(promises)
     console.log(saveProductPromise)
     console.log(saveLogPromise)
-
-
-
     // validateAge(19).then(msg => {
     //     console.log(msg)
     // }).catch(err => {
     //     console.log(msg)
     // })
-
     // try {
     //     let isOk = await validateAge(20)
     //     console.log(isOk)
