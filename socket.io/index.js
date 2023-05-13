@@ -8,8 +8,12 @@ const server = app.listen("6000", () => {
     console.log("Server its running in the port 6000")
 })
 
-initialSocket(server).then(io=>{
-    io.on("connection", (objSocket)=>{
+initialSocket(server).then(io => {
+    io.on("connection", (socket) => {
         console.log("User connected")
+        
+        socket.on("hola", (data) => {
+            console.log(data)
+        })
     })
 })

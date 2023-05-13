@@ -18,7 +18,6 @@ async function uploadFiles(name, buffer, ContentType) {
     console.log(data)
 }
 
-
 module.exports = {
     uploadFiles
 }
