@@ -3,3 +3,6 @@ primeraSesion/package-lock.json
 primeraSesion/.env
 NoSQLMongo/node_modules
 NoSQLMongo/.env
+socket.io/node_modules
+quintaSesion/node_modules
+quintaSesion/package-lock.json
